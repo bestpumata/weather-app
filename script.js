@@ -3,7 +3,9 @@ const input = document.getElementById('city-input');
 const result = document.getElementById('weather-result');
 
 // ⚠️ Сложи своя ключ тук
-const API_KEY = 'b21d445d9f4f01eb373d77d2e38ebb4a';
+const API_KEY = "YOUR_API_KEY_HERE"; // заменено за сигурност
+🔐 За да използваш приложението локално, добави своя OpenWeather API ключ в `script.js`, на мястото на YOUR_API_KEY_HERE.
+
 
 function showLoader() {
     document.getElementById('loader').style.display = 'block';
