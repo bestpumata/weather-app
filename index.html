@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="bg">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Weather App</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>🌦️ Времето по градове</h1>
+
+    <form id="weather-form">
+      <input type="text" id="city-input" placeholder="Въведи град (напр. Sofia)" required>
+      <button type="submit">Покажи</button>
+    </form>
+    <div id="loader" class="loader" style="display: none;"></div>
+
+    <div id="weather-result" class="weather-box">
+        <!-- Основна прогноза тук -->
+      </div>
+      
+      <div id="hourly-forecast" class="forecast-section">
+        <!-- 12-часова прогноза -->
+      </div>
+      
+      <div id="daily-forecast" class="forecast-section">
+        <!-- 7-дневна прогноза -->
+      </div>
+      
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

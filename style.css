@@ -1,0 +1,149 @@
+body {
+    font-family: 'Segoe UI', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding-top: 50px;
+    min-height: 100vh;
+    margin: 0;
+  }
+  
+  .container {
+    background: #fff;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+  }
+  
+  input {
+    padding: 0.5rem;
+    width: 70%;
+    border-radius: 5px 0 0 5px;
+    border: 1px solid #ccc;
+    font-size: 1rem;
+  }
+  
+  button {
+    padding: 0.5rem;
+    width: 30%;
+    border: none;
+    background: #0077cc;
+    color: white;
+    font-weight: bold;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+  }
+  
+  .weather-box {
+    margin-top: 2rem;
+    font-size: 1.1rem;
+    background: #f1faff;
+    padding: 1rem;
+    border-radius: 10px;
+    min-height: 100px;
+  }
+  .weather-box h2 {
+    margin-top: 0;
+  }
+  
+  .forecast-section {
+    margin-top: 2rem;
+    background: #f0faff;
+    padding: 1rem;
+    border-radius: 10px;
+  }
+  
+  .forecast-section h3 {
+    margin-top: 0;
+    font-size: 1.1rem;
+    color: #333;
+  }
+  
+  .forecast-cards {
+    display: flex;
+    overflow-x: auto;
+    gap: 10px;
+    padding-top: 0.5rem;
+  }
+  
+  .forecast-card {
+    background: #fff;
+    padding: 0.5rem;
+    min-width: 100px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    text-align: center;
+    font-size: 0.9rem;
+  }
+  
+  .forecast-card img {
+    width: 50px;
+    height: 50px;
+  }
+  .weather-box {
+    margin-top: 2rem;
+    background: #e9f6ff;
+    padding: 1rem;
+    border-radius: 10px;
+    min-height: 100px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+  }
+  
+  .weather-box h2 {
+    margin-bottom: 0.5rem;
+    color: #0077cc;
+  }
+  
+  .weather-box img {
+    width: 80px;
+    height: 80px;
+  }
+  
+  .weather-box p {
+    margin: 0.3rem 0;
+    font-size: 1rem;
+  }
+  .loader {
+    border: 6px solid #f3f3f3;
+    border-top: 6px solid #0077cc;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    margin: 20px auto;
+    animation: spin 1s linear infinite;
+  }
+  
+  @keyframes spin {
+    to { transform: rotate(360deg); }
+  }
+  .weather-box p {
+    margin: 0.4rem 0;
+    font-size: 1rem;
+    color: #222;
+  }
+  body.clear {
+    background: linear-gradient(to top, #87cefa, #e0f7ff); /* ясно небе */
+  }
+  
+  body.clouds {
+    background: linear-gradient(to top, #d3d3d3, #f0f0f0); /* облаци */
+  }
+  
+  body.rain {
+    background: linear-gradient(to top, #4a6fa5, #9dbed5); /* дъжд */
+  }
+  
+  body.snow {
+    background: linear-gradient(to top, #dfefff, #ffffff); /* сняг */
+  }
+  
+  body.thunderstorm {
+    background: linear-gradient(to top, #2c3e50, #4a4a4a); /* буря */
+  }
+  
+  body.mist {
+    background: linear-gradient(to top, #cccccc, #eeeeee); /* мъгла */
+  }
